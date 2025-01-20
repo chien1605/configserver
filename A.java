@@ -6,4 +6,6 @@ public class A {
     private String C;
 
     private Long d;
+
+    private String r;
 }

@@ -6,4 +6,5 @@ public class B {
 
     private Integer t;
 
+    private Integer f;
 }
