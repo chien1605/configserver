@@ -1,4 +1,8 @@
 public class B {
 
-    private String b;
+    private String b1;
+
+    private Long b;
+
+
 }
