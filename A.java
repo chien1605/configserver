@@ -4,4 +4,6 @@ public class A {
     private Integer B1;
 
     private String C;
+
+    private Long d;
 }

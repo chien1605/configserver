@@ -4,5 +4,6 @@ public class B {
 
     private Long b;
 
+    private Integer t;
 
 }
