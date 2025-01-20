@@ -1,7 +1,11 @@
 public class A {
     private String A;
 
-    private Integer C;
+    private Integer B1;
 
-    private String main;
+    private String C;
+
+    private Long d;
+
+    private String r;
 }
