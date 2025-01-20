@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public class B {
+public class B {
+
+    private String b;
 }
