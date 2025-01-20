@@ -1,5 +1,7 @@
 public class A {
     private String A;
 
-    private Integer B;
+    private Integer C;
+
+    private String main;
 }
