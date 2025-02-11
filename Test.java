@@ -17,6 +17,8 @@ import java.security.SecureRandom;
 import java.util.*;
 import java.util.function.Function;
 
+
+//comment1
 @Component
 @RequiredArgsConstructor
 public class Test {
@@ -26,12 +28,15 @@ public class Test {
     private String secretKey;
     public String generateToken(com.project.shopapp.models.User user) throws Exception{
         //properties => claims
-        Map<String, Object> claims = new HashMap<>();
+        //comment2
+        List<> 1;
+        List<String, Object> claims = new HashMap<>();
         //this.generateSecretKey();
         claims.put("phoneNumber", user.getPhoneNumber());
         try {
             String token = Jwts.builder()
                     .setClaims(claims) //how to extract claims from this ?
+                    //comment2
                     .setSubject(user.getPhoneNumber())
                     .setExpiration(new Date(System.currentTimeMillis() + expiration * 1000L))
                     .signWith(getSignInKey(), SignatureAlgorithm.HS256)
