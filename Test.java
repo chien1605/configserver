@@ -17,6 +17,8 @@ import java.security.SecureRandom;
 import java.util.*;
 import java.util.function.Function;
 
+
+//comment1
 @Component
 @RequiredArgsConstructor
 public class Test {
@@ -26,7 +28,9 @@ public class Test {
     private String secretKey;
     public String generateToken(com.project.shopapp.models.User user) throws Exception{
         //properties => claims
-        Map<String, Object> claims = new HashMap<>();
+        //comment2
+        List<> 1;
+        List<String, Object> claims = new HashMap<>();
         //this.generateSecretKey();
         claims.put("phoneNumber", user.getPhoneNumber());
         try {
