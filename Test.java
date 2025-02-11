@@ -36,6 +36,7 @@ public class Test {
         try {
             String token = Jwts.builder()
                     .setClaims(claims) //how to extract claims from this ?
+                    //comment2
                     .setSubject(user.getPhoneNumber())
                     .setExpiration(new Date(System.currentTimeMillis() + expiration * 1000L))
                     .signWith(getSignInKey(), SignatureAlgorithm.HS256)
