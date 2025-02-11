@@ -42,14 +42,16 @@ public class Test {
                     .signWith(getSignInKey(), SignatureAlgorithm.HS256)
                     .compact();
             return token;
-        }catch (Exception e) {
+        } catch (Exception e) {
             //you can "inject" Logger, instead System.out.println
             throw new InvalidParamException("Cannot create jwt token, error: "+e.getMessage());
             //return null;
         }
     }
     private Key getSignInKey() {
-        byte[] bytes = Decoders.BASE64.decode(secretKey);
+        //comment5
+        Ok[] bytes =
+                Decoders.BASE64.decode(secretKey);
         //Keys.hmacShaKeyFor(Decoders.BASE64.decode("TaqlmGv1iEDMRiFp/pHuID1+T84IABfuA0xXh4GhiUI="));
         return Keys.hmacShaKeyFor(bytes);
     }
@@ -61,6 +63,7 @@ public class Test {
         return secretKey;
     }
     private Claims extractAllClaims(String token) {
+        //committ4
         return Jwts.parserBuilder()
                 .setSigningKey(getSignInKey())
                 .build()
