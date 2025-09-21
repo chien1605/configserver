@@ -7,4 +7,6 @@ public class B {
     private Integer t;
 
     private Integer f;
+
+    private String y;
 }
