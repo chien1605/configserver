@@ -9,4 +9,6 @@ public class B {
     private Integer f;
 
     private String y;
+
+    private String c;
 }

@@ -5,4 +5,6 @@ public class Commit1 {
     private String email;
 
     private String messagea;
+
+    private String message;
 }
