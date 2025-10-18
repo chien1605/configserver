@@ -8,4 +8,6 @@ public class A {
     private Long d;
 
     private String r;
+
+    private String getC;
 }

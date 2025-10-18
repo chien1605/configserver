@@ -7,4 +7,6 @@ public class Commit1 {
     private String messagea;
 
     private String message;
+
+    private String come;
 }
